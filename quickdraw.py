@@ -151,7 +151,7 @@ def train(epochs=2000, batch=128, z_dim=100):
                 
             plt.tight_layout()
             #plt.show()
-            savefig("test.png")
+            plt.savefig("test.png")
     
     return a_metrics, d_metrics
 
