@@ -20,9 +20,9 @@ img_w, img_h = 28, 28
 data = np.reshape(data, [data.shape[0], img_w, img_h, 1])
 print(data.shape)
 
-plt.imshow(data[0,:,:,0], cmap="Greys")
+#plt.imshow(data[0,:,:,0], cmap="Greys")
 
-input("Press Enter to exit")
+input("Press Enter to continue")
 
 def discriminator_builder(width=64, p=0.4):
     inputs = Input([img_w, img_h, 1])
@@ -146,12 +146,12 @@ def train(epochs=2000, batch=128, z_dim=100):
 
             for k in range(gen_imgs.shape[0]):
                 plt.subplot(4, 4, k+1)
-                plt.imshow(gen_imgs[k, :, :, 0], cmap='gray')
+                #plt.imshow(gen_imgs[k, :, :, 0], cmap='gray')
                 plt.axis('off')
                 
             plt.tight_layout()
             #plt.show()
-            plt.savefig("test.png")
+            plt.savefig("img"+i+".png")
     
     return a_metrics, d_metrics
 
