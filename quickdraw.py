@@ -146,12 +146,12 @@ def train(epochs=2000, batch=128, z_dim=100):
 
             for k in range(gen_imgs.shape[0]):
                 plt.subplot(4, 4, k+1)
-                #plt.imshow(gen_imgs[k, :, :, 0], cmap='gray')
+                plt.imshow(gen_imgs[k, :, :, 0], cmap='gray')
                 plt.axis('off')
                 
             plt.tight_layout()
-            #plt.show()
-            plt.savefig("img"+i+".png")
+            plt.show()
+            plt.savefig("img"+str(i)+".png")
     
     return a_metrics, d_metrics
 
