@@ -3,7 +3,8 @@ generative adversarial networks with keras
 
 project taken from live leason
 https://www.safaribooksonline.com/library/view/deep-reinforcement-learning
-more info and jupiter notebooks found here.
+
+More info and jupiter notebooks found here.
 https://github.com/the-deep-learners/TensorFlow-LiveLessons
 
 ## results 
